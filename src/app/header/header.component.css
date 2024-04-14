@@ -1,0 +1,88 @@
+:root{
+    --my-font:'sans-serif'
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position: relative;
+    background-color: #28347A;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    color:white;
+    font-family: var(--my-font);
+}
+
+.left-container i,.left-container p{
+    font-size: 1.5rem;
+}
+
+.left-container i{
+    margin-right: 1rem;
+}
+
+.right-container i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+
+.right-options{
+    /* border:2px solid red; */
+    cursor:pointer;
+    padding-block: 15px;
+}
+
+i.fa-caret-down{
+   font-size: 0.7rem !important;
+    margin-left: 5px;
+}
+
+
+.settings{
+    background-color: #28347A;
+    color:white;
+    border:none;
+}
+
+.dropdown-options{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    border:1px solid white;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 3px black;
+    right: 0;
+    top:47px;
+}
+
+.dropdown-options a{
+    text-decoration: none;
+    color:black;
+    padding: 5px 10px;
+    border:none;
+    outline: none;
+    font-family: var(--my-font);
+    font-weight: 500;
+}
+
+.dropdown-options a:hover{
+    color: white;
+    background-color:black;
+}
+
+.dropdown-options a:last-child{
+    padding-block:10px;
+}
+.right-options:hover .dropdown-options{
+    display: flex;
+    cursor: pointer;
+}
+
+
